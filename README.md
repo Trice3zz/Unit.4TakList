@@ -60,13 +60,10 @@ Make sure the function has access to the request, response, and next arguments, 
 
 Regardless of which option you choose, your middleware should:
 
-	- Read the token from the request headers
-
-	- Verify the token using your secret
-
-	- Attach the decoded user data to the request object
-
-	- Prevent unauthorized access if the token is missing or invalid
+* Read the token from the request headers
+* Verify the token using your secret
+* Attach the decoded user data to the request object
+* Prevent unauthorized access if the token is missing or invalid
 
 Don’t forget to add this middleware to each protected route individually.
 
