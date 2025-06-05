@@ -1,10 +1,6 @@
-import app from "#app";
-import db from "#db/client";
+import app from './app.js';
 
-const PORT = process.env.PORT ?? 3000;
-
-await db.connect();
-
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}...`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
